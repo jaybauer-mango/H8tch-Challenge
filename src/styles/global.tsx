@@ -1,12 +1,36 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { white, raven, black } from '@styles/colors'
-import { stripButton } from '@styles/mixins'
+import { stripButton } from './mixins'
+
+import {
+  white,
+  porcelain,
+  french,
+  raven,
+  tundora,
+  black,
+  aquamarine,
+  fiord,
+  casper,
+  chateau
+} from './colors'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+    --color-white: ${white};
+    --color-porcelain: ${porcelain};
+    --color-french: ${french};
+    --color-raven: ${raven};
+    --color-tundora: ${tundora};
+    --color-black: ${black};
+    --color-aquamarine: ${aquamarine};
+    --color-fiord: ${fiord};
+    --color-casper: ${casper};
+    --color-chateau: ${chateau};
+
     font-family: Helvetica, Arial, sans-serif;
-    color: ${white};
+    font-size: 62.5%;
+    color: var(--color-white);
   }
 
   body {
@@ -14,14 +38,10 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: ${raven};
+    background-color: var(--color-raven);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1 {
-    font-family: 'Merriweather', serif;
   }
 `
 

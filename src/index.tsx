@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { GlobalStyle, GlobalReset } from '@styles/global'
+import { GlobalStyle, GlobalReset } from '@/styles/global'
 
 import { App } from './App'
 

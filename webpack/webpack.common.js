@@ -6,8 +6,7 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
-      '@components': path.resolve(__dirname, '../src/components'),
-      '@styles': path.resolve(__dirname, '../src/styles')
+      '@': path.resolve(__dirname, '../src'),
     },
   },
   module: {
@@ -24,7 +23,13 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ],
   },
   output: {

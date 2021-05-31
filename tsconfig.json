@@ -17,12 +17,12 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "noImplicitAny": false,
 
     /* Alias handling */
     "baseUrl": "src",
     "paths": { 
-      "@components": ["components/*"],
-      "@styles": ["styles/*"]
+      "@/*": ["./*"],
     }
   },
   "include": ["src/**/*"]

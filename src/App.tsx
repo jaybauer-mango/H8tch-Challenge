@@ -6,7 +6,7 @@ import { ColumnDisplay } from '@/components'
 
 const MainWrapper = styled.main`
   display: block;
-  padding: 12rem 0;
+  padding: 12rem 2.4rem;
   margin: 0 auto;
   max-width: ${siteMaxWidth};
 `

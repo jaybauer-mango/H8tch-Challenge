@@ -25,18 +25,18 @@ export function SelectInput({
   const [value, setValue] = useState('')
 
   return (
-      <Select
-        id={id}
-        defaultValue={initialValue}
-        onChange={e => {
-          setValue(e.target.value)
-          if (onChange) onChange(e)
-        }}
-      >
-        <option value="" disabled>{placeholder}</option>
-        <option>1</option>
-        <option>2</option>
-      </Select>
+    <Select
+      id={id}
+      defaultValue={initialValue}
+      onChange={e => {
+        setValue(e.target.value)
+        if (onChange) onChange(e)
+      }}
+    >
+      <option value="" disabled>{placeholder}</option>
+      <option>1</option>
+      <option>2</option>
+    </Select>
   )
 }
 

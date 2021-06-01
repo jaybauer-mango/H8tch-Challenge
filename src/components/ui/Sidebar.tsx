@@ -10,11 +10,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 1.2rem;
 `
 
 const InnerWrapper = styled.div`
-
   &:not(:last-of-type) {
     margin-bottom: 1.6rem;
   }
@@ -40,7 +38,6 @@ export function Sidebar() {
     } else {
       alert('Please fill out all fields')
     }
-
   }
 
   return (
